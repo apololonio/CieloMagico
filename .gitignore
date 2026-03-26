@@ -43,24 +43,28 @@ Build/*
 *.ipa
 
 # ================================
-# C++ / OBJ (OJO)
+# C++ / OBJ (IMPORTANTE)
 # ================================
 
-# ⚠️ SOLO ignora obj de compilación en Source/
+# Solo ignora .obj de compilación dentro de Source
 Source/**/*.obj
 
 # ================================
 # SOURCE ART (OPCIONAL)
 # ================================
 
-# Si tienes carpeta de arte crudo que NO quieres subir
+# Arte crudo (quítalo si quieres versionarlo)
 SourceArt/
 
 # ================================
-# TESTING (TU CASO)
+# TESTING (SANDBOX LOCAL)
 # ================================
 
-Content/Main/TESTING/
+# Ignora TODO dentro de TESTING
+Content/Main/TESTING/*
+
+# PERO permite que la carpeta exista en el repo
+!Content/Main/TESTING/.gitkeep
 
 # ================================
 # OTROS
@@ -69,6 +73,6 @@ Content/Main/TESTING/
 # Logs
 *.log
 
-# Temp
+# Temp files
 *.tmp
 *.temp
